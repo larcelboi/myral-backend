@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for myral-backend1 on 2026-04-25T17:58:21Z
+# fly.toml app configuration file generated for myral-backend2 on 2026-04-25T18:03:48Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'myral-backend1'
+app = 'myral-backend2'
 primary_region = 'ams'
 
 [build]
@@ -11,7 +11,7 @@ primary_region = 'ams'
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = false
+  auto_stop_machines = 'off'
   auto_start_machines = true
   min_machines_running = 1
   processes = ['app']
